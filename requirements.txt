@@ -15,5 +15,4 @@ protobuf
 # for qwen
 transformers_stream_generator
 
-# for webui
-gradio
+
