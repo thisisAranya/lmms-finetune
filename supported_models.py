@@ -119,6 +119,12 @@ register_model(
     model_hf_path="llava-hf/llava-interleave-qwen-7b-hf"
 )
 
+register_model(
+    model_id="llava_200percls_merged",
+    model_family_id="llava-1.5",
+    model_hf_path="swapnil7777/llava_200percls_merged"
+)
+
 # llava-onevision -------------------------------------------
 # register_model(
 #     model_id="llava-onevision-0.5b-si",
