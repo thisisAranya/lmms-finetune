@@ -125,6 +125,12 @@ register_model(
     model_hf_path="swapnil7777/llava_200percls_merged"
 )
 
+register_model(
+    model_id="llava_200mix300percls_epoch2",
+    model_family_id="llava-1.5",
+    model_hf_path="Aranya31/llava_200mix300percls_conv_merged_epoch2"
+)
+
 # llava-onevision -------------------------------------------
 # register_model(
 #     model_id="llava-onevision-0.5b-si",
