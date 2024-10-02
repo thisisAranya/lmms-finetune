@@ -137,6 +137,12 @@ register_model(
     model_hf_path="Aranya31/llava_77acc_merged_epoch3"
 )
 
+register_model(
+    model_id="llava_epoch4_dermnet",
+    model_family_id="llava-1.5",
+    model_hf_path="Aranya31/llava_epoch4_dermnet"
+)
+
 # llava-onevision -------------------------------------------
 # register_model(
 #     model_id="llava-onevision-0.5b-si",
