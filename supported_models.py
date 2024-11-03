@@ -69,6 +69,30 @@ register_model(
 )
 
 register_model(
+    model_id="skin_llava_label_epoch1",
+    model_family_id="llava-1.5",
+    model_hf_path="Aranya31/skin_llava_label_epoch1"
+)
+
+register_model(
+    model_id="skin_llava_label_epoch2",
+    model_family_id="llava-1.5",
+    model_hf_path="Aranya31/skin_llava_label_epoch2"
+)
+
+register_model(
+    model_id="skin_llava_label_epoch3",
+    model_family_id="llava-1.5",
+    model_hf_path="Aranya31/skin_llava_label_epoch3"
+)
+
+register_model(
+    model_id="skin_llava_label_epoch4",
+    model_family_id="llava-1.5",
+    model_hf_path="Aranya31/skin_llava_label_epoch4"
+)
+
+register_model(
     model_id="llava-1.5-13b",
     model_family_id="llava-1.5",
     model_hf_path="llava-hf/llava-1.5-13b-hf"
