@@ -1,7 +1,7 @@
 torch
 torchvision
 transformers==4.45.0
-% transformers @ git+https://github.com/huggingface/transformers.git
+# transformers @ git+https://github.com/huggingface/transformers.git
 accelerate
 peft
 deepspeed==0.14.4
