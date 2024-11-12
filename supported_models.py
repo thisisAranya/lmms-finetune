@@ -82,7 +82,7 @@ register_model(
 
 register_model(
     model_id="llava-med-v1.5-mistral-7b",
-    model_family_id="llava-1.5",
+    model_family_id="llava-med-1.5",
     model_hf_path="microsoft/llava-med-v1.5-mistral-7b"
 )
 
