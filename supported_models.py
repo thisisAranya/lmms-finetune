@@ -12,39 +12,47 @@ MODULE_KEYWORDS: Dict[str, Dict[str, List]] = {
         "vision_projector": ["multi_modal_projector"],
         "llm": ["language_model"]
     },
-    "llava-1.6": {
-        "vision_encoder": ["vision_tower"],
-        "vision_projector": ["multi_modal_projector"],
-        "llm": ["language_model"],
-        "others": ["image_newline"]
-    },
-    "llava-interleave": {
+
+    "llava-med-1.5": {
         "vision_encoder": ["vision_tower"],
         "vision_projector": ["multi_modal_projector"],
         "llm": ["language_model"]
-    },
-    "llava-next-video": {
-        "vision_encoder": ["vision_tower"],
-        "vision_projector": ["multi_modal_projector"],
-        "others": ["image_newline", "vision_resampler"],
-        "llm": ["language_model"]
-    },
-    "phi3-v": {
-        "vision_encoder": ["model.vision_embed_tokens.img_processor"],
-        "vision_projector": ["model.vision_embed_tokens.img_projection"],
-        "others": ["model.vision_embed_tokens.glb_GN", "model.vision_embed_tokens.sub_GN"],
-        "llm": ["model.embed_tokens", "model.layers", "model.norm", "lm_head"]
-    },
-    "qwen-vl": {
-        "vision_encoder": ["transformer.visual.conv1", "transformer.visual.positional_embedding", "transformer.visual.ln_pre", "transformer.visual.transformer", "transformer.visual.ln_post", "transformer.visual.proj"],
-        "vision_projector": ["transformer.visual.attn_pool"],
-        "llm": ["transformer.wte", "transformer.rotary_emb", "transformer.h", "transformer.ln_f", "lm_head"]
-    },
-    "qwen2-vl": {
-        "vision_encoder": ["visual.patch_embed", "visual.rotary_pos_emb", "visual.blocks"],
-        "vision_projector": ["visual.merger"],
-        "llm": ["model"]
     }
+
+    
+    # "llava-1.6": {
+    #     "vision_encoder": ["vision_tower"],
+    #     "vision_projector": ["multi_modal_projector"],
+    #     "llm": ["language_model"],
+    #     "others": ["image_newline"]
+    # },
+    # "llava-interleave": {
+    #     "vision_encoder": ["vision_tower"],
+    #     "vision_projector": ["multi_modal_projector"],
+    #     "llm": ["language_model"]
+    # },
+    # "llava-next-video": {
+    #     "vision_encoder": ["vision_tower"],
+    #     "vision_projector": ["multi_modal_projector"],
+    #     "others": ["image_newline", "vision_resampler"],
+    #     "llm": ["language_model"]
+    # },
+    # "phi3-v": {
+    #     "vision_encoder": ["model.vision_embed_tokens.img_processor"],
+    #     "vision_projector": ["model.vision_embed_tokens.img_projection"],
+    #     "others": ["model.vision_embed_tokens.glb_GN", "model.vision_embed_tokens.sub_GN"],
+    #     "llm": ["model.embed_tokens", "model.layers", "model.norm", "lm_head"]
+    # },
+    # "qwen-vl": {
+    #     "vision_encoder": ["transformer.visual.conv1", "transformer.visual.positional_embedding", "transformer.visual.ln_pre", "transformer.visual.transformer", "transformer.visual.ln_post", "transformer.visual.proj"],
+    #     "vision_projector": ["transformer.visual.attn_pool"],
+    #     "llm": ["transformer.wte", "transformer.rotary_emb", "transformer.h", "transformer.ln_f", "lm_head"]
+    # },
+    # "qwen2-vl": {
+    #     "vision_encoder": ["visual.patch_embed", "visual.rotary_pos_emb", "visual.blocks"],
+    #     "vision_projector": ["visual.merger"],
+    #     "llm": ["model"]
+    # }
 }
 
 
@@ -110,50 +118,50 @@ register_model(
     model_hf_path="llava-hf/llava-1.5-13b-hf"
 )
 
-# llava-1.6/next ---------------------------------------------
-register_model(
-    model_id="llava-1.6-vicuna-7b",
-    model_family_id="llava-1.6",
-    model_hf_path="llava-hf/llava-v1.6-vicuna-7b-hf"
-)
+# # llava-1.6/next ---------------------------------------------
+# register_model(
+#     model_id="llava-1.6-vicuna-7b",
+#     model_family_id="llava-1.6",
+#     model_hf_path="llava-hf/llava-v1.6-vicuna-7b-hf"
+# )
 
-register_model(
-    model_id="llava-1.6-vicuna-13b",
-    model_family_id="llava-1.6",
-    model_hf_path="llava-hf/llava-v1.6-vicuna-13b-hf"
-)
+# register_model(
+#     model_id="llava-1.6-vicuna-13b",
+#     model_family_id="llava-1.6",
+#     model_hf_path="llava-hf/llava-v1.6-vicuna-13b-hf"
+# )
 
-# llava-next-video -------------------------------------------
-register_model(
-    model_id="llava-next-video-7b",
-    model_family_id="llava-next-video",
-    model_hf_path="llava-hf/LLaVA-NeXT-Video-7B-hf"
-)
+# # llava-next-video -------------------------------------------
+# register_model(
+#     model_id="llava-next-video-7b",
+#     model_family_id="llava-next-video",
+#     model_hf_path="llava-hf/LLaVA-NeXT-Video-7B-hf"
+# )
 
-register_model(
-    model_id="llava-next-video-7b-32k",
-    model_family_id="llava-next-video",
-    model_hf_path="llava-hf/LLaVA-NeXT-Video-7B-32K-hf"
-)
+# register_model(
+#     model_id="llava-next-video-7b-32k",
+#     model_family_id="llava-next-video",
+#     model_hf_path="llava-hf/LLaVA-NeXT-Video-7B-32K-hf"
+# )
 
-register_model(
-    model_id="llava-next-video-34b",
-    model_family_id="llava-next-video",
-    model_hf_path="llava-hf/LLaVA-NeXT-Video-34B-hf"
-)
+# register_model(
+#     model_id="llava-next-video-34b",
+#     model_family_id="llava-next-video",
+#     model_hf_path="llava-hf/LLaVA-NeXT-Video-34B-hf"
+# )
 
-# llava-interleave -------------------------------------------
-register_model(
-    model_id="llava-interleave-qwen-0.5b",
-    model_family_id="llava-interleave",
-    model_hf_path="llava-hf/llava-interleave-qwen-0.5b-hf"
-)
+# # llava-interleave -------------------------------------------
+# register_model(
+#     model_id="llava-interleave-qwen-0.5b",
+#     model_family_id="llava-interleave",
+#     model_hf_path="llava-hf/llava-interleave-qwen-0.5b-hf"
+# )
 
-register_model(
-    model_id="llava-interleave-qwen-7b",
-    model_family_id="llava-interleave",
-    model_hf_path="llava-hf/llava-interleave-qwen-7b-hf"
-)
+# register_model(
+#     model_id="llava-interleave-qwen-7b",
+#     model_family_id="llava-interleave",
+#     model_hf_path="llava-hf/llava-interleave-qwen-7b-hf"
+# )
 
 register_model(
     model_id="llava_200percls_merged",
@@ -211,32 +219,32 @@ register_model(
 #     model_hf_path="llava-hf/llava-onevision-qwen2-7b-ov-hf"
 # )
 
-# qwen-vl ----------------------------------------------------
-register_model(
-    model_id="qwen-vl-chat",
-    model_family_id="qwen-vl",
-    model_hf_path="Qwen/Qwen-VL-Chat"
-)
+# # qwen-vl ----------------------------------------------------
+# register_model(
+#     model_id="qwen-vl-chat",
+#     model_family_id="qwen-vl",
+#     model_hf_path="Qwen/Qwen-VL-Chat"
+# )
 
-# phi3-v -----------------------------------------------------
-register_model(
-    model_id="phi3-v",
-    model_family_id="phi3-v",
-    model_hf_path="microsoft/Phi-3-vision-128k-instruct"
-)
+# # phi3-v -----------------------------------------------------
+# register_model(
+#     model_id="phi3-v",
+#     model_family_id="phi3-v",
+#     model_hf_path="microsoft/Phi-3-vision-128k-instruct"
+# )
 
-# qwen2-vl ---------------------------------------------------
-register_model(
-    model_id="qwen2-vl-2b-instruct",
-    model_family_id="qwen2-vl",
-    model_hf_path="Qwen/Qwen2-VL-2B-Instruct"
-)
+# # qwen2-vl ---------------------------------------------------
+# register_model(
+#     model_id="qwen2-vl-2b-instruct",
+#     model_family_id="qwen2-vl",
+#     model_hf_path="Qwen/Qwen2-VL-2B-Instruct"
+# )
 
-register_model(
-    model_id="qwen2-vl-7b-instruct",
-    model_family_id="qwen2-vl",
-    model_hf_path="Qwen/Qwen2-VL-7B-Instruct"
-)
+# register_model(
+#     model_id="qwen2-vl-7b-instruct",
+#     model_family_id="qwen2-vl",
+#     model_hf_path="Qwen/Qwen2-VL-7B-Instruct"
+# )
 
 #=============================================================
 
