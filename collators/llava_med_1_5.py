@@ -9,7 +9,7 @@ from . import register_collator
 from .base import BaseDataCollator
 
 
-@register_collator("llava-1.5")
+@register_collator("llava-med-1.5")
 class LLaVA15DataCollator(BaseDataCollator):
     def __call__(self, instances: Sequence[Dict]) -> Dict[str, torch.Tensor]:
         # images
