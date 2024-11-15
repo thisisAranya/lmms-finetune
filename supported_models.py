@@ -89,12 +89,20 @@ register_model(
 )
 
 # swapnil7777/llava_level_4epoch_multi_image
-
+# Aranya31/llava_dermnet_conv_1813_ep5
 register_model(
     model_id="llava_level_4epoch_multi_image",
     model_family_id="llava-1.5",
     model_hf_path="swapnil7777/llava_level_4epoch_multi_image"
 )
+
+register_model(
+    model_id="llava_dermnet_conv_1813_ep5",
+    model_family_id="llava-1.5",
+    model_hf_path="Aranya31/llava_dermnet_conv_1813_ep5"
+)
+
+
 # # llava-1.6/next ---------------------------------------------
 # register_model(
 #     model_id="llava-1.6-vicuna-7b",
