@@ -90,6 +90,8 @@ register_model(
 
 # swapnil7777/llava_level_4epoch_multi_image
 # Aranya31/llava_dermnet_conv_1813_ep5
+# Aranya31/skinllava-1.5-7b-label
+
 register_model(
     model_id="llava_level_4epoch_multi_image",
     model_family_id="llava-1.5",
@@ -97,9 +99,9 @@ register_model(
 )
 
 register_model(
-    model_id="llava_dermnet_conv_1813_ep5",
+    model_id="skinllava-1.5-7b-label",
     model_family_id="llava-1.5",
-    model_hf_path="Aranya31/llava_dermnet_conv_1813_ep5"
+    model_hf_path="Aranya31/skinllava-1.5-7b-label"
 )
 
 
