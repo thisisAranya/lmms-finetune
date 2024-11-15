@@ -88,6 +88,13 @@ register_model(
     model_hf_path="llava-hf/llava-1.5-13b-hf"
 )
 
+# swapnil7777/llava_level_4epoch_multi_image
+
+register_model(
+    model_id="llava_level_4epoch_multi_image",
+    model_family_id="llava-1.5",
+    model_hf_path="swapnil7777/llava_level_4epoch_multi_image"
+)
 # # llava-1.6/next ---------------------------------------------
 # register_model(
 #     model_id="llava-1.6-vicuna-7b",
